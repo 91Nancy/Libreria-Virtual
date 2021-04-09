@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel / Slider con Glider.js</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <a href="#" class="mode" id="mode">ModoBlack</a>
+      <main class="contenido-principal">
+        <img
+          src="img/libro0.jfif"
+          alt="Dome of the German Bundestag"
+          class="contenido-principal__imagen"
+        />
+        <div class="contenido-principal__contenedor">
+          <div class="encabezado">
+            <div class="contenido-principal__titulo">
+              <h2>
+                LA VOZ AUSENTE<br />
+                <span> $200.00</span>
+              </h2>
+            </div>
+            <div class="sub-titulo">
+              <p>Novela Literaria contemporánea</p>
+              <p>No. Pag: 544</p>
+              <p>Editorial: Emercé</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="contenido-principal__resumen card-1">
+              <h1>Sipnosis</h1>
+              <p>
+                Las cosas no siempre son como parecen, y cuanto más cerca
+                aparenta estar el mundo de cierta calma, mayor suele ser la
+                tormenta que se gesta en lo inesperado. Un rayo acaba en
+                segundos con la ensoñación de Pablo...
+              </p>
+              <a href="#" class="link">Leer más</a>
+            </div>
+            <div class="contenido-principal__resumen card-2">
+              <div class="profile">
+                <div class="line"></div>
+                <div class="profile-1">
+                  <h1>Gabriel Rolón</h1>
+                  <img src="img/aut.jpg" class="img-autor" alt="" />
+                </div>
+                <div class="profile-2">
+                  <br />
+                  <div class="valoracion">
+                    <i></i><i class="fa fa-star" aria-hidden="true"></i>4.9
+                  </div>
+
+                  <h2>Sobre el autor</h2>
+                  <p>
+                    Nació en Buenos Aires en 1961. Cursó sus estudios en la
+                    facultad de Psicología de la Universidad de Buenos Aires. Se
+                    graduó e hizo su especialización en psicoanálisis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <div class="carousel">
+        <div class="carousel__contenedor">
+          <button aria-label="Anterior" class="carousel__anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel__lista">
+            <div class="carousel__elemento">
+              <img src="img/libro0.jfif" alt="LA VOZ AUSENTE" />
+              <p>LA VOZ AUSENTE</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/libro1.jpg" alt="EMPTY HEARTS" />
+              <p>EMPTY HEARTS</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/libro2.jpg" alt="FRANKENSTEIN" />
+              <p>FRANKENSTEIN</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/libro3.jfif" alt="LAVANDERA" />
+              <p>LAVANDERA</p>
+            </div>
+
+            <div class="carousel__elemento">
+              <img src="img/libro4.jfif" alt="CANDIDO" />
+              <p>CANDIDO</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/libro5.jfif" alt="BAJO LA MISMA ESTRELLA" />
+              <p>BAJO LA MISMA ESTRELLA</p>
+            </div>
+            <div class="carousel__elemento">
+              <img
+                src="img/libro6.jfif"
+                alt="THE SISTERS BROTHERS PATRICK DE WITT"
+              />
+              <p>THE SISTERS BROTHERS PATRICK DE WITT</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/libro7.jfif" alt="ALICIA A TRAVÉS DEL ESPEJO" />
+              <p>ALICIA A TRAVÉS DEL ESPEJO</p>
+            </div>
+          </div>
+
+          <button aria-label="Siguiente" class="carousel__siguiente">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div role="tablist" class="carousel__indicadores"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+    <script src="js/black.js"></script>
+  </body>
+</html>
